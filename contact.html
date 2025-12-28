@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Sayandip Sharangi</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="nav-inner">
+
+    <!-- LOGO AS HOME BUTTON -->
+    <a href="index.html" class="logo-link">
+      <h2 class="logo">Sayandip</h2>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="index.html#about" class="nav-link">About</a></li>
+      <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= CONTACT SECTION ================= -->
+<section class="contact">
+  <div class="contact-wrapper">
+
+    <!-- LEFT INFO -->
+    <div class="contact-info">
+      <h1>Let’s Talk</h1>
+      <p>
+        Have a project, collaboration idea, or just want to say hello?
+        Drop a message and I’ll get back to you.
+      </p>
+
+      <div class="contact-details">
+        <div>
+          <strong>Email</strong>
+          <span>sayandip.sharangi@gmail.com</span>
+        </div>
+        <div>
+          <strong>Location</strong>
+          <span>India</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <form class="contact-form" id="contactForm">
+
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="Your name" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label>Subject</label>
+        <input type="text" name="subject" placeholder="Reason for contacting" required>
+      </div>
+
+      <div class="form-group">
+        <label>Message</label>
+        <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn submit-btn">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>© 2025 Sayandip Sharangi</p>
+</footer>
+
+<!-- Scripts -->
+<script src="static/main.js"></script>
+<script src="static/contact.js"></script>
+
+<!-- SUCCESS TOAST -->
+<div id="toast" class="toast">
+  Message sent successfully! I’ll get back to you soon.
+</div>
+
+</body>
+</html>
